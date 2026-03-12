@@ -7,12 +7,12 @@ public class alpha {
 			
 			@Override
 			public void run() {
-				System.out.println("The current Thread name is: "+ Thread.currentThread().getName());
+				System.out.println("The Thread you created has started running. Its name is: "+ Thread.currentThread().getName());
 				
 			}
 		});
-		System.out.println("Before running the thread i have just created");
-		System.out.println("The current Thread name is: "+ Thread.currentThread().getName());
+		System.out.println("Before running the thread i have just created, the main thread is what is running. Its name is: "+ Thread.currentThread().getName());
+		System.out.println("Now I have started the thread I created");
 		
 		thread.start();
 		try {
