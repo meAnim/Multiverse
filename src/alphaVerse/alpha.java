@@ -14,6 +14,7 @@ public class alpha {
 		System.out.println("Before running the thread i have just created, the main thread is what is running. Its name is: "+ Thread.currentThread().getName());
 		System.out.println("Now I have started the thread I created");
 		
+		thread.setName("Pax-Humana");
 		thread.start();
 		try {
 			Thread.sleep(1000);
