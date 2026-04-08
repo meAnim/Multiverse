@@ -37,7 +37,7 @@ public class alpha {
 		
 		thread2.setName("free");
 		
-		thread2.run();
+		thread2.start();
 		
 		
 	}
