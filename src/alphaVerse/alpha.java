@@ -1,5 +1,7 @@
 package alphaVerse;
 
+import java.math.BigInteger;
+
 public class alpha {
 	
 	public static void main(String[] args) {
@@ -14,6 +16,7 @@ public class alpha {
 		System.out.println("Before running the thread i have just created, the main thread is what is running. Its name is: "+ Thread.currentThread().getName());
 		System.out.println("Now I have started the thread I created");
 		
+		
 		thread.setName("Pax-Humana");
 		thread.start();
 		try {
@@ -22,6 +25,20 @@ public class alpha {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		Thread thread2 = new Thread(new Runnable() {
+			
+			@Override
+			public void run() {
+				System.out.println(Thread.currentThread().getName());
+				
+			}
+		});
+		
+		thread2.setName("free");
+		
+		thread2.run();
+		
 		
 	}
 
